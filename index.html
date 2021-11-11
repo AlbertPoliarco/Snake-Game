@@ -4,12 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table, th, td, h1 {
+            border:1px solid black, greenyellow;
+            width: 350px;
+            border-radius: 20px;
+            background-color: greenyellow;
+        }
+        </style>
     <title>Snake Game</title>
 </head>
 <body>
-    <canvas class="canvas" height="400" width="400" style="background-color: #3e3e3e;"></canvas>
-    <h1 class="score">0</h1>
-    <h1 class="score">0</h1>
+
+    <h1 style="text-align: center">Snake Game</h1>
+    <canvas class="canvas" height="350" width="350" style="background-color: #3e3e3e;" style="border:1px solid #000000;" ></canvas>
+    <table>
+        <tr>
+            <th>
+                <h1>Score</h1>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <h2 class="score" style="text-align: center">0</h2>
+            </td>
+        </tr>
+    </table>
     <script src="fruit.js"></script>
     <script src="snake.js"></script>
     <script src="main.js"></script>
