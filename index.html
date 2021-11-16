@@ -6,31 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         table, h1 {
-            border:1px solid black;
-            width: 350px;
-            border-radius: 20px;
-            background-color: #678e3e;
+            border:2px solid black;
+            width: 360px;
+            border-radius: 10px;
+            background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
             color: honeydew;
             margin-top: 1.25rem;
             margin-bottom: 2rem;
             text-transform: uppercase;
             outline: 3px solid sandybrown ;
-            font-family: sans-serif;
+            font-family:;
         }
         </style>
+        <style>
+            .canvas{border:1px solid sandybrown};
+        </style>
+        
     <title>Snake Game</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
-
-    <h1 style="text-align: center">Snake Game</h1>
+    <!-- Head -->
+    <h1 class="title" style="text-align: center">Snake Game</h1>
+    <!-- box -->
     <canvas class="canvas" height="360" width="360" 
-    style="background-color: #3e3e3e;"
-    style="border-radius: 5px;">
+    style="background-image: linear-gradient(to top, #051937, #004068, #006b87, #009689, #00bf72, #00bf72, #00bf72, #00bf72, #009689, #006b87, #004068, #051937);">
     </canvas>
+    <!-- Score table -->
     <table>
         <tr>
             <th>
-                <h1>Score</h1>
+                <h2>Score</h2>
             </th>
         </tr>
         <tr>
@@ -39,6 +45,7 @@
             </td>
         </tr>
     </table>
+    
     <script src="fruit.js"></script>
     <script src="snake.js"></script>
     <script src="main.js"></script>
