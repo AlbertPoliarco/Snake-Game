@@ -11,7 +11,7 @@ function Fruit(){
     }
 
     this.draw = function (){
-        ctx.fillStyle = '#FF0000';
+        ctx.fillStyle = '#FF0000' ;
         ctx.fillRect(this.x, this.y, scale, scale);
     }
 

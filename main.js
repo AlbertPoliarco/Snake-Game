@@ -34,7 +34,7 @@ let snake;
 }());
 
 window.addEventListener('keydown', ((evt)=> {
-    // replace a,s,w,d > arrow
+    
     const direction = evt.key.replace('Arrow', '');
     snake.changeDirection(direction);
     // console.log(evt)
